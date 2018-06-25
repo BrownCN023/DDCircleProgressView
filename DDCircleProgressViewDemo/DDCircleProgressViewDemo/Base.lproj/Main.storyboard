@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XPk-6N-L2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="DDF-xV-eiK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv3-HT-sQ3" customClass="DDCircleProgressView">
+                                <rect key="frame" x="15" y="20" width="108.5" height="105"/>
+                                <color key="backgroundColor" red="1" green="0.64846528034080442" blue="0.32117775761667966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="CU0-bG-0CD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="135"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endAngle">
+                                        <real key="value" value="405"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCM-aX-q8h" customClass="DDCircleProgressView">
+                                <rect key="frame" x="133.5" y="20" width="108" height="105"/>
+                                <color key="backgroundColor" red="1" green="0.69239132937612591" blue="0.97831051070859365" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="p1D-6a-mEA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="270"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endAngle">
+                                        <real key="value" value="630"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bt-sB-CwQ" customClass="DDCircleProgressView">
+                                <rect key="frame" x="251.5" y="20" width="108.5" height="105"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaK-gX-zju">
+                                        <rect key="frame" x="41.5" y="23" width="25.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qkZ-by-IEW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3883672407341715" green="0.84014457109892848" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="S0y-0D-NiA"/>
+                                    <constraint firstItem="iaK-gX-zju" firstAttribute="centerY" secondItem="6Bt-sB-CwQ" secondAttribute="centerY" id="Z1N-4K-2gG"/>
+                                    <constraint firstItem="iaK-gX-zju" firstAttribute="centerX" secondItem="6Bt-sB-CwQ" secondAttribute="centerX" id="lWm-kH-HOh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="-135"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endAngle">
+                                        <real key="value" value="135"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.23999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NHC-3O-wIa">
+                                <rect key="frame" x="16" y="176" width="337" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="tfz-dS-ScI"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ApT-Sn-FYD"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Bt-sB-CwQ" firstAttribute="top" secondItem="XPk-6N-L2I" secondAttribute="bottom" id="3uI-v6-KaV"/>
+                            <constraint firstItem="Wv3-HT-sQ3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="H60-B8-uPS"/>
+                            <constraint firstItem="KCM-aX-q8h" firstAttribute="leading" secondItem="Wv3-HT-sQ3" secondAttribute="trailing" constant="10" id="HL5-LA-FC6"/>
+                            <constraint firstAttribute="trailing" secondItem="6Bt-sB-CwQ" secondAttribute="trailing" constant="15" id="MHA-XT-t3T"/>
+                            <constraint firstItem="Wv3-HT-sQ3" firstAttribute="top" secondItem="XPk-6N-L2I" secondAttribute="bottom" id="Och-JU-8RJ"/>
+                            <constraint firstItem="6Bt-sB-CwQ" firstAttribute="leading" secondItem="KCM-aX-q8h" secondAttribute="trailing" constant="10" id="QVd-XR-0tK"/>
+                            <constraint firstItem="6Bt-sB-CwQ" firstAttribute="width" secondItem="Wv3-HT-sQ3" secondAttribute="width" id="R5d-mr-74b"/>
+                            <constraint firstItem="NHC-3O-wIa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="18" id="YX1-ny-zxR"/>
+                            <constraint firstItem="KCM-aX-q8h" firstAttribute="width" secondItem="Wv3-HT-sQ3" secondAttribute="width" id="bUH-YF-dvl"/>
+                            <constraint firstAttribute="trailing" secondItem="NHC-3O-wIa" secondAttribute="trailing" constant="24" id="doZ-sW-eVA"/>
+                            <constraint firstItem="KCM-aX-q8h" firstAttribute="top" secondItem="XPk-6N-L2I" secondAttribute="bottom" id="rhh-9x-28A"/>
+                            <constraint firstItem="NHC-3O-wIa" firstAttribute="top" secondItem="Wv3-HT-sQ3" secondAttribute="bottom" constant="51" id="zFP-TR-Ucr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressLabel3" destination="iaK-gX-zju" id="lwR-3y-lxi"/>
+                        <outlet property="progressView1" destination="Wv3-HT-sQ3" id="gfp-6a-J0r"/>
+                        <outlet property="progressView2" destination="KCM-aX-q8h" id="Wwq-cQ-tf6"/>
+                        <outlet property="progressView3" destination="6Bt-sB-CwQ" id="LBq-bf-Kec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406" y="85"/>
+        </scene>
+    </scenes>
+</document>
