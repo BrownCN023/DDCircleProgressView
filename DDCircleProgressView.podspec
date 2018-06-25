@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "DDCircleProgressView"
-s.version      = "0.0.1"
+s.version      = "0.0.2"
 s.summary      = "圈子进度"
 s.homepage     = "https://github.com/BrownCN023/DDCircleProgressView"
 s.license      = { :type => "MIT", :file => "LICENSE" }

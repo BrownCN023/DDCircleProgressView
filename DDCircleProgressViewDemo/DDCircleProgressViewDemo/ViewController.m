@@ -29,13 +29,12 @@
     self.progressView3.progressDelegate = self;
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)circleView:(DDCircleProgressView *)circleView progress:(CGFloat)progress{
+- (void)circleProgressView:(DDCircleProgressView *)view progress:(CGFloat)progress{
     self.progressLabel3.text = [NSString stringWithFormat:@"%.02f%%",progress*100];
 }
 

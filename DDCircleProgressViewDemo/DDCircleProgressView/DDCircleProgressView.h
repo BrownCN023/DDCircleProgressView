@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger,DDCircleType) {
 @protocol DDCircleProgressDelegate <NSObject>
 
 @optional
-- (void)circleView:(DDCircleProgressView *)circleView progress:(CGFloat)progress;
+- (void)circleProgressView:(DDCircleProgressView *)view progress:(CGFloat)progress;
 
 @end
 

@@ -107,8 +107,8 @@
 - (void)setProgress:(CGFloat)progress{
     _progress = progress;
     [self refreshPercentView];
-    if(self.progressDelegate && [self.progressDelegate respondsToSelector:@selector(circleView:progress:)]){
-        [self.progressDelegate circleView:self progress:progress];
+    if(self.progressDelegate && [self.progressDelegate respondsToSelector:@selector(circleProgressView:progress:)]){
+        [self.progressDelegate circleProgressView:self progress:progress];
     }
 }
 
