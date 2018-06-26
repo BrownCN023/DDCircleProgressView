@@ -55,6 +55,7 @@
     
     _trackColor = [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:1.0];
     _strokeColor = [UIColor colorWithRed:54/255.0 green:171/255.0 blue:96/255.0 alpha:1.0];
+    self.gradientImage = [UIImage imageNamed:@"DDCircleProgressView.bundle/gradient-0.png"];
 }
 
 - (void)setupSubviews{
@@ -132,6 +133,19 @@
     [self refreshStrokeLayerColor];
 }
 
+- (void)setGradientImage:(UIImage *)gradientImage{
+    _gradientImage = gradientImage;
+    self.gradientImgView.image = gradientImage;
+}
+
+- (void)refreshStrokeLayerColor{
+    self.strokeShapeLayer.strokeColor = _strokeColor.CGColor;
+}
+
+- (void)refreshTrackLayerColor{
+    self.trackShapeLayer.strokeColor = _trackColor.CGColor;
+}
+
 - (void)refreshPercentView{
     if(_strokeWidth != _bkStrokeWidth){
         _bkStrokeWidth = _strokeWidth;
@@ -158,14 +172,6 @@
     path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetWidth(self.bounds)/2.0, CGRectGetHeight(self.bounds)/2.0) radius:radius startAngle:startAngle endAngle:endAngle clockwise:YES];
     path.flatness = CGFLOAT_MIN;
     return path;
-}
-
-- (void)refreshStrokeLayerColor{
-    self.strokeShapeLayer.strokeColor = _strokeColor.CGColor;
-}
-
-- (void)refreshTrackLayerColor{
-    self.trackShapeLayer.strokeColor = _trackColor.CGColor;
 }
 
 - (CAShapeLayer *)trackShapeLayer{
@@ -197,7 +203,7 @@
 - (UIImageView *)gradientImgView{
     if(!_gradientImgView){
         UIImageView * v = [[UIImageView alloc] initWithFrame:self.bounds];
-        v.image = [UIImage imageNamed:@"DDCircleProgressView.bundle/gradient-0.png"];
+        v.image = self.gradientImage;
         _gradientImgView = v;
     }
     return _gradientImgView;

@@ -24,8 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.progressView1.type = DDCircleTypeGradient;
-//    self.progressView2.type = DDCircleTypeGradient;
-//    self.progressView3.type = DDCircleTypeGradient;
+    self.progressView2.type = DDCircleTypeGradient;
     self.progressView3.progressDelegate = self;
 }
 
@@ -42,6 +41,10 @@
     self.progressView1.progress = sender.value;
     self.progressView2.progress = sender.value;
     self.progressView3.progress = sender.value;
+    
+}
+- (IBAction)clickGradientPicButton:(id)sender {
+    self.progressView1.gradientImage = [UIImage imageNamed:@"DDCircleProgressView.bundle/gradient-1.png"];
 }
 
 

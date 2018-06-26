@@ -68,6 +68,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                         <real key="value" value="0.25"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="gradientImage" value="DDCircleProgressView.bundle/gradient-1.png"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bt-sB-CwQ" customClass="DDCircleProgressView">
@@ -116,6 +117,14 @@
                                     <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ApT-Sn-FYD"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVX-W3-xqV">
+                                <rect key="frame" x="15" y="260" width="109" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gradient Pic"/>
+                                <connections>
+                                    <action selector="clickGradientPicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6pT-yb-z2y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -142,7 +151,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-406" y="85"/>
+            <point key="canvasLocation" x="-407.19999999999999" y="84.107946026986511"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DDCircleProgressView.bundle/gradient-1.png" width="16" height="16"/>
+    </resources>
 </document>

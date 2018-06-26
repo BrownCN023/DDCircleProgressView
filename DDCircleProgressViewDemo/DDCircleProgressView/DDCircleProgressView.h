@@ -34,6 +34,7 @@ IB_DESIGNABLE
 @property (nonatomic,assign) IBInspectable CGFloat endAngle;
 @property (nonatomic,strong) IBInspectable UIColor * strokeColor;
 @property (nonatomic,strong) IBInspectable UIColor * trackColor;
+@property (nonatomic,strong) IBInspectable UIImage * gradientImage;
 @property (nonatomic,weak) id<DDCircleProgressDelegate> progressDelegate;
 
 @end
